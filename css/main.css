@@ -6,6 +6,169 @@
   box-sizing: border-box;
 }
 
-.header {
-  background-color: red;
+:root {
+  --primary-color: #000;
+  --secondary-color: #fff;
+  --accent-color: #f00;
+  --base-font-size: 1rem;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+  font-size: var(--base-font-size);
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--secondary-color);
+  padding: 1rem;
+}
+
+.logo img {
+  max-height: 40px;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+}
+
+.search input {
+  font-size: var(--base-font-size);
+  padding: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.search button {
+  padding: 0.5rem 1rem;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border: none;
+  cursor: pointer;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+}
+
+.user-info span {
+  margin-right: 1rem;
+}
+
+.header-bottom {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  padding: 0.5rem 1rem;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  margin-right: 1rem;
+}
+
+nav a {
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+
+.carousel {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-track-container {
+  display: flex;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+  min-width: 100%;
+  position: relative;
+}
+
+.carousel-slide img {
+  width: 100%;
+  display: block;
+}
+
+.carousel-caption {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: var(--secondary-color);
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+}
+
+.carousel-nav {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+
+.carousel-button {
+  background: var(--primary-color);
+  border: none;
+  color: var(--secondary-color);
+  padding: 10px;
+  cursor: pointer;
+}
+
+.categories {
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem 1rem;
+}
+
+.category {
+  text-align: center;
+}
+
+.category img {
+  max-width: 100px;
+  margin-bottom: 0.5rem;
+}
+
+footer {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  text-align: center;
+  padding: 1rem;
+}
+
+.home-demo .item {
+  background: #ff3f4d;
+}
+
+.home-demo h2 {
+  color: #FFF;
+  text-align: center;
+  padding: 5rem 0;
+  margin: 0;
+  font-style: italic;
+  font-weight: 300;
 }/*# sourceMappingURL=main.css.map */

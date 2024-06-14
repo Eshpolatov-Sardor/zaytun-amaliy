@@ -2,8 +2,97 @@ doctype html
 html(lang="en")
     head
         meta(charset="UTF-8")
-        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
         title Document
-        link(rel="stylesheet", href=".//../css/main.css")
+        link(rel="stylesheet" href="../css/main.css")
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
     body 
-    
+        header.header-top
+            .logo
+                img(src='path-to-logo.png' alt='ZZ Fashion')
+            .search
+                input(type='text' placeholder='Что вас интересует?')
+                button Найти
+            .user-info
+                span Андрей Иванов
+                a(href='#') Мой профиль
+        .header-bottom
+            nav
+                ul
+                    li: a(href='#') Каталог товаров
+                    li: a(href='#') Продукты
+                    li: a(href='#') Одежда и обувь
+                    li: a(href='#') Электроника
+                    li: a(href='#') Для дома
+                    li: a(href='#') Спорт
+                    li: a(href='#') Дети
+                    li: a(href='#') Книги
+                    li: a(href='#') Бренды
+                    li: a(href='#') Зоо
+                    li: a(href='#') Компьютеры
+                    li: a(href='#') Здоровье
+                    li: a(href='#') Ремонт
+    main
+        .carousel 
+            - var id = ['carousel-craft']
+- var urlname = [{n:114},{n:745},{n:315},{n:622},{n:401}]
+
+
+.container 
+    .home-demo
+        .owl-carousel.owl-theme
+            .item
+                h2 Swipe
+            .item
+                h2 Drag
+            .item
+                h2 Responsive
+            .item
+                h2 CSS3
+            .item
+                h2 Fast
+    .categories
+        .category
+            img(src='path-to-smartphones.png' alt='Смартфоны')
+            span Смартфоны
+        .category
+            img(src='path-to-tvs.png' alt='Телевизоры')
+            span Телевизоры
+        .category
+            img(src='path-to-consoles.png' alt='Игровые приставки')
+            span Игровые приставки
+        .category
+            img(src='path-to-laptops.png' alt='Ноутбуки')
+            span Ноутбуки
+        .category
+            img(src='path-to-bikes.png' alt='Велосипеды')
+            span Велосипеды
+        .category
+            img(src='path-to-pools.png' alt='Надувные бассейны')
+            span Надувные бассейны
+        .category
+            img(src='path-to-clothing.png' alt='Верхняя одежда')
+            span Верхняя одежда
+        .category
+            img(src='path-to-drinks.png' alt='Напитки')
+            span Напитки
+    footer
+        p &copy; 2024 ZZ Fashion
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+        script(src="../js/script.js") 
