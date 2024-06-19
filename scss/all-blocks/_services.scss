@@ -1,0 +1,49 @@
+:root {
+    --primary-color: #000;
+    --background-color: #fff;
+    --font-size: 1rem;
+    --border-color: #e0e0e0;
+    --highlight-color: #ffcc00;
+    --disabled-color: #ccc;
+  }
+  .karzinka{
+    display: flex;
+    gap: 2rem;
+  }
+    .section {
+      flex: 1;
+      max-width: 20rem;
+      border: 1px solid var(--border-color);
+      padding: 1rem;
+      border-radius: 5px;
+      background-color: var(--background-color);
+  
+      h2 {
+        font-size: 1.25rem;
+        margin-bottom: 1rem;
+      }
+  
+      
+  
+        &.disabled {
+          color: var(--disabled-color);
+        }
+  
+        p {
+          margin: 0.25rem 0;
+        }
+  
+        p.name {
+          font-weight: bold;
+        }
+  
+        p.phone {
+          color: var(--highlight-color);
+        }  
+      p.show-all {
+        color: var(--highlight-color);
+        cursor: pointer;
+        text-decoration: underline;
+      }
+    }
+  
