@@ -4,41 +4,123 @@ html(lang="ru")
     meta(charset="UTF-8")
     meta(name="viewport" content="width=device-width, initial-scale=1.0")
     title Оформление заказа - Zaytun
-    link(rel="stylesheet", href="../css/main.css")
+    link(rel="stylesheet" href="../css/main.css")
   body
-     .container
-        .karzinka
+  header.header
+    .container
+      .container-loge 
+        .zakaz_zakas
+          .karzinka 
             .section.contact-info
+              .h2 
                 h2 Контактные данные
-                .info
-                p.name Игорь Николаев
-                p.phone +998 90 909 90 09
+                img(src="..//image/img/add.png", alt="")
+              .info
+                div 
+                  img(src="..//image/img/Frame 50.png", alt="")
+                  div 
+                    p.name Игорь Николаев
+                    p.phone +998 90 909 90 09
+                  img(src="..//image/img/Frame 50.png", alt="")
                 hr
                 p Добавьте новое контактное лицо, если заказ будет получать другой человек
             .section.delivery
+              .h2 
                 h2 Доставка
-                .info
+                img(src="..//image/img/add.png", alt="")
+              .info
                 p Дом
                 p г. Ташкент, Мирободский р-н, ул. Тараса Шевченко 42
                 hr
-                .info
+              .info
                 p Работа
                 p г. Ташкент, Яккасарайский р-н, ул. Шота Руставели 14
                 p.show-all Показать все
             .section.payment
-                h2 Оплата
-                .info
+              h2 Оплата
+              .info
                 p Наличными
                 p При получении, курьеру
                 hr
-                .info.disabled
+              .info.disabled
                 p Онлайн оплата
                 p Payme, Click, Apelsin
                 hr
-                .info.disabled
+              .info.disabled
                 p Пластиковой картой
                 p При получении, курьеру
-    
+          div.zakas_order
+            h2.zakas_order-title Ваш заказ
+            div.zakas_order-items
+                div.zakas_order-item
+                    img.zakas_order-item-image(src="..//image/img/Rectangle 20.png" alt="Apple iPhone 11")
+                    p.zakas_order-item-price 8 240 000 сум
+                    p.zakas_order-item-description Apple iPhone 11 8/128 GB, черный
+                div.zakas_order-item
+                    img.zakas_order-item-image(src="..//image/img/Rectangle 20.png" alt="Sony WH-1000XM3")
+                    p.zakas_order-item-price 2 720 000 сум
+                    p.zakas_order-item-description Sony WH-1000XM3 беспроводные наушники
+                div.zakas_order-item
+                    img.zakas_order-item-image(src="..//image/img/Rectangle 20.png" alt="Рубашка LC Waikiki мужская")
+                    p.zakas_order-item-price 2 720 000 сум
+                    p.zakas_order-item-description Рубашка LC Waikiki мужская, фиолетовая
+            div.zakas_user-icon
+                hr
+            div.zakas_order-comment
+                h3.zakas_order-comment-title Комментарий к заказу
+                textarea.zakas_order-comment-textarea(placeholder="Напишите комментарий...")
+        main.main 
+          div.karzinka_order-summary
+            div.karzinka_order-items
+              p.karzinka_total-label Товары (3)
+              p.karzinka_total-price 17 823 090 сум
+            div.karzinka_discount
+              p.karzinka_discount-label Скидка
+              p.karzinka_discount-amount -1 819 023 сум
+            div.karzinka_delivery
+              p.karzinka_delivery-label Доставка
+              p.karzinka_delivery-amount Бесплатно  за 24 часа
+            hr
+            div.karzinka_total
+              p.karzinka_total-to-pay К оплате
+              p.karzinka_total-amount 16 011 067 сум
+          button.karzinka_submit-button Оформить заказ
+          p.karzinka_agreement 
+            | Нажимая «Оформить заказ», вы соглашаетесь с 
+            a.karzinka_public-offer(href="#") публичной офертой
+
+          div.karzinka_additional-options
+            div.karzinka_express-delivery
+              .karzinka_express-delivery-label
+                label(for="express-delivery") Экспресс доставка
+                  input#switch(type="checkbox")
+                  .wrap
+                    label(for="switch")
+
+              p.karzinka_express-delivery-description Доставка в указанное время или за 2 часа с момента заказа
+              p.karzinka_express-delivery-cost 
+              | Стоимость услуги 
+              br
+              a.karzinka_public-offer(href="#") 50 000 сум
+            div.karzinka_self-pickup
+              .karzinka_express-delivery-label
+                label(for="express-delivery") Самовывоз (pick-up point)
+                  input#switch(type="checkbox")
+                  .wrap
+                    label(for="switchc")
+            div.karzinka_free-delivery
+              .karzinka_express-delivery-label
+                label(for="express-delivery") Бесконтактная доставка
+                  input#switch(type="checkbox")
+                  .wrap
+                    label(for="switchc")
+
+          div.karzinka_promo-codes
+            p.karzinka_promo-code-label Доступные промокоды
+            div.karzinka_promo-code
+              p.karzinka_promo-code-text HK8324Y
+              p.karzinka_promo-code-description Промокод на бесплатную экспресс доставку
+              button.karzinka_apply-button Использовать
 
 
-        script(src="../js/script.js")
+  script(src="../js/script.js")
